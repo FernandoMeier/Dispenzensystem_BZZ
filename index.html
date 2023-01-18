@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dispenzen BZZ</title>
+    
+</head>
+<body>
+    <div id="box">
+        <a href="https://moodle4.bzz.ch/my/"><img src="./BZZThing.jpg" alt="BZZ Foto" id="BZZB"></a>
+        <h1>Dispenz eintragen</h1>
+        <h2>Eingeloggt als: testperson1</h2>
+        <h2>Klasse: IM21a</h2><br>
+        <form id="Dok">
+            <label for="datum">Von:</label>
+            <input type="date" name="Datum" id="datum" max="3000-01-01" onfocus="this.min=new Date().toISOString().split('T')[0]" required>
+            <label for="datum">Bis:</label>
+            <input type="date" name="Datum" id="datum" max="3000-01-01" onfocus="this.min=new Date().toISOString().split('T')[0]" required>
+            <br><br>
+            <select name="länge" id="length" required>
+                <option value="">Dauer</option>
+                <option value="halb">Morgen</option>
+                <option value="halbNacher">Nachmittag</option>
+                <option value="ganz">Ganzer Tag</option>
+                <option value="mehr">Mehrere Tage</option>
+            </select>
+            <select name="Grund" id="grund" required>
+                <option value="">Bitte Grund wählen</option>
+                <option value="Privat">Privat</option>
+                <option value="Beruflich">Beruflich</option>
+                <option value="Militär">Militär</option>
+            </select>
+            <input type="text" placeholder="Grund für Abwesenheit genauer erklären" id="Begründung" autocomplete="off" required>
+            <button type="submit" id="submit">Absenden</button required>
+        </form>
+    </div>
+</body>
+</html>
