@@ -15,13 +15,12 @@
     align-items: center ;
     flex-direction: column;
     padding: 3rem;
-    /*
-    background-image: url("./yasincengiz38-skibididop.gif");
-    */
 }
 
 html {
     background: linear-gradient(to right,#f8f9fa 0%,#dee2e6 100%);
+    background-image: url("./bzz_bg_blau-1200x800.jpg");
+    background-size:cover;
 }
 
 html, body {
